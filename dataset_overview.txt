@@ -1,0 +1,196 @@
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 504 entries, 0 to 503
+Data columns (total 26 columns):
+ #   Column            Non-Null Count  Dtype  
+---  ------            --------------  -----  
+ 0   item_id           504 non-null    object 
+ 1   item_id_1         494 non-null    object 
+ 2   text              495 non-null    object 
+ 3   type              504 non-null    object 
+ 4   time_edited       16 non-null     object 
+ 5   project_id        504 non-null    object 
+ 6   project_id_1      504 non-null    object 
+ 7   doi               458 non-null    object 
+ 8   wos_id            504 non-null    object 
+ 9   scopus_id         0 non-null      float64
+ 10  openalex_id       0 non-null      float64
+ 11  s2_id             0 non-null      float64
+ 12  pubmed_id         114 non-null    float64
+ 13  dimensions_id     0 non-null      float64
+ 14  title             499 non-null    object 
+ 15  title_slug        504 non-null    object 
+ 16  publication_year  499 non-null    float64
+ 17  source            488 non-null    object 
+ 18  keywords          0 non-null      float64
+ 19  authors           504 non-null    object 
+ 20  meta              504 non-null    object 
+ 21  user_id           494 non-null    object 
+ 22  newKey|0          494 non-null    float64
+ 23  newKey|1          494 non-null    float64
+ 24  username          504 non-null    object 
+ 25  ab                504 non-null    object 
+dtypes: float64(9), object(17)
+memory usage: 102.5+ KB
+
+Missing Values:
+item_id               0
+item_id_1            10
+text                  9
+type                  0
+time_edited         488
+project_id            0
+project_id_1          0
+doi                  46
+wos_id                0
+scopus_id           504
+openalex_id         504
+s2_id               504
+pubmed_id           390
+dimensions_id       504
+title                 5
+title_slug            0
+publication_year      5
+source               16
+keywords            504
+authors               0
+meta                  0
+user_id              10
+newKey|0             10
+newKey|1             10
+username              0
+ab                    0
+dtype: int64
+
+Basic Statistics:
+                                     item_id  \
+count                                    504   
+unique                                   360   
+top     00abe19a-6c77-47f7-a4db-7f3a7b9d8023   
+freq                                       2   
+mean                                     NaN   
+std                                      NaN   
+min                                      NaN   
+25%                                      NaN   
+50%                                      NaN   
+75%                                      NaN   
+max                                      NaN   
+
+                                   item_id_1  \
+count                                    494   
+unique                                   350   
+top     00abe19a-6c77-47f7-a4db-7f3a7b9d8023   
+freq                                       2   
+mean                                     NaN   
+std                                      NaN   
+min                                      NaN   
+25%                                      NaN   
+50%                                      NaN   
+75%                                      NaN   
+max                                      NaN   
+
+                                                     text      type  \
+count                                                 495       504   
+unique                                                353         1   
+top     Coffee is the beverage resulting from the infu...  academic   
+freq                                                    2       504   
+mean                                                  NaN       NaN   
+std                                                   NaN       NaN   
+min                                                   NaN       NaN   
+25%                                                   NaN       NaN   
+50%                                                   NaN       NaN   
+75%                                                   NaN       NaN   
+max                                                   NaN       NaN   
+
+                             time_edited  \
+count                                 16   
+unique                                14   
+top     2025-02-15 11:58:42.211656+01:00   
+freq                                   2   
+mean                                 NaN   
+std                                  NaN   
+min                                  NaN   
+25%                                  NaN   
+50%                                  NaN   
+75%                                  NaN   
+max                                  NaN   
+
+                                  project_id  \
+count                                    504   
+unique                                     1   
+top     d48fc662-05a9-4b98-8330-256848c1032f   
+freq                                     504   
+mean                                     NaN   
+std                                      NaN   
+min                                      NaN   
+25%                                      NaN   
+50%                                      NaN   
+75%                                      NaN   
+max                                      NaN   
+
+                                project_id_1                 doi  \
+count                                    504                 458   
+unique                                     1                 327   
+top     d48fc662-05a9-4b98-8330-256848c1032f  10.3390/su10124598   
+freq                                     504                   2   
+mean                                     NaN                 NaN   
+std                                      NaN                 NaN   
+min                                      NaN                 NaN   
+25%                                      NaN                 NaN   
+50%                                      NaN                 NaN   
+75%                                      NaN                 NaN   
+max                                      NaN                 NaN   
+
+                     wos_id  scopus_id  ...  publication_year          source  \
+count                   504        0.0  ...        499.000000             488   
+unique                  360        NaN  ...               NaN             240   
+top     WOS:000455338100264        NaN  ...               NaN  SUSTAINABILITY   
+freq                      2        NaN  ...               NaN              15   
+mean                    NaN        NaN  ...       2021.755511             NaN   
+std                     NaN        NaN  ...          2.002093             NaN   
+min                     NaN        NaN  ...       2018.000000             NaN   
+25%                     NaN        NaN  ...       2020.000000             NaN   
+50%                     NaN        NaN  ...       2022.000000             NaN   
+75%                     NaN        NaN  ...       2023.000000             NaN   
+max                     NaN        NaN  ...       2025.000000             NaN   
+
+        keywords  authors                                               meta  \
+count        0.0      504                                                504   
+unique       NaN      195                                                360   
+top          NaN       []  {'wos': {'AB': "Coffee is the beverage resulti...   
+freq         NaN      238                                                  2   
+mean         NaN      NaN                                                NaN   
+std          NaN      NaN                                                NaN   
+min          NaN      NaN                                                NaN   
+25%          NaN      NaN                                                NaN   
+50%          NaN      NaN                                                NaN   
+75%          NaN      NaN                                                NaN   
+max          NaN      NaN                                                NaN   
+
+                                     user_id    newKey|0    newKey|1  \
+count                                    494  494.000000  494.000000   
+unique                                     2         NaN         NaN   
+top     3798656b-31b3-4f62-85cb-13b0302bd9b0         NaN         NaN   
+freq                                     252         NaN         NaN   
+mean                                     NaN    0.651822    0.348178   
+std                                      NaN    0.476876    0.476876   
+min                                      NaN    0.000000    0.000000   
+25%                                      NaN    0.000000    0.000000   
+50%                                      NaN    1.000000    0.000000   
+75%                                      NaN    1.000000    1.000000   
+max                                      NaN    1.000000    1.000000   
+
+         username                                                 ab  
+count         504                                                504  
+unique          3                                                360  
+top     sirui.zhu  Coffee is the beverage resulting from the infu...  
+freq          252                                                  2  
+mean          NaN                                                NaN  
+std           NaN                                                NaN  
+min           NaN                                                NaN  
+25%           NaN                                                NaN  
+50%           NaN                                                NaN  
+75%           NaN                                                NaN  
+max           NaN                                                NaN  
+
+[11 rows x 26 columns]
