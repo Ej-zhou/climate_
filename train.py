@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from transformers import TrainerCallback
 
 # Load dataset
-file_path = "training_data_check.csv"
+file_path = "training_data0320.csv"
 df = pd.read_csv(file_path)
 
 # Check for missing values and drop them
